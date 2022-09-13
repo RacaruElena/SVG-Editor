@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Simple SVG Editor</title>
+	<link rel="stylesheet" href="6_1090_Racaru_Elena_Andreea.css">
+
+
+</head>
+
+<body>
+	<h1>Editor SVG</h1>
+
+	<div class="butoane">
+		<button onclick="Clear()">Clear</button>
+		<button onclick="downloadPNG()">Download .png</button>
+		<button onclick="downloadSVG()">Download .svg</button>
+		<button onclick="undo()">Undo</button>
+		<button onclick="deleteShape()">Delete</button>
+	</div>
+
+
+	<div class="content">
+		<div class="header">
+			<div class="ceva">
+				<div style="text-align:center">
+					<label>Fill </label>
+					<input type="color" id="color" value="#1f56a6">
+				</div>
+				<div style="text-align:center">
+					<label>Stroke</label>
+					<input type="color" id="colorLine" value="#1f56a6">
+				</div>
+				<div>
+					<input type="range" min="1" max="10" value="1" id="slider" id="myRange">
+					<p>Value: <span id="width"></span></p>
+				</div>
+				<hr class="line">
+			</div>
+
+			<div class="buttons">
+				<p class="shapes">Shapes</p>
+				<button onclick="dreptunghi()">Rectangle</button>
+				<button onclick="elipsa()">Ellipse</button>
+				<button onclick="linie()">Line</button>
+			</div>
+		</div>
+		<div class="clasaSvg">
+			<svg id="editor">
+				<svg id="elemente"></svg>
+				<rect x="0" y="0" id="selectie" width="0" height="0" style="display:none;"></rect>
+				<ellipse cx="0" cy="0" id="selectieElipsa" style="display:none;"></ellipse>
+				<line x1="0" y1="0" id="selectieLinie" style="display:none;"></line>
+
+
+			</svg>
+		</div>
+
+	</div>
+	<script src="6_1090_Racaru_Elena_Andreea.js"></script>
+
+</body>
+
+</html>

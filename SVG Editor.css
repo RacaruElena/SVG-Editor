@@ -1,0 +1,124 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.content {
+    display: flex;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 9%;
+    background-color: #f4bb57;
+
+
+}
+
+.clasaSvg {
+    width: 91%;
+}
+
+.ceva {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: flex-end;
+}
+
+.buttons {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #eaeaea;
+    cursor: crosshair;
+}
+
+h1 {
+    width: 100%;
+    background-color: #f5af75;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 8px;
+}
+
+svg ellipse {
+    fill: gray;
+    stroke: navy;
+    cursor: move;
+}
+
+svg rect {
+    cursor: move;
+}
+
+svg line {
+    fill: black;
+    stroke: rgb(5, 5, 5);
+}
+
+svg #selectie {
+    fill: transparent;
+    stroke: red;
+    stroke-opacity: 0.5;
+    stroke-dasharray: 3, 3;
+    stroke: green;
+}
+
+svg #selectieElipsa {
+    fill: transparent;
+    stroke: red;
+    stroke-opacity: 0.5;
+    stroke-dasharray: 3, 3;
+    stroke: green;
+}
+
+svg #selectieLinie {
+    fill: transparent;
+    stroke: red;
+    stroke-opacity: 0.5;
+    stroke-dasharray: 3, 3;
+    stroke: green;
+}
+
+svg .selectat {
+    outline-style: dashed;
+}
+
+.butoane {
+    text-align: center;
+    background-color: #c79200;
+}
+
+.line {
+    width: 100%;
+    border-width: 2px;
+    color: pink;
+    background-color: black;
+    margin-top: 20px;
+}
+
+.shapes {
+    text-align: center;
+    margin-top: 10px;
+
+}
